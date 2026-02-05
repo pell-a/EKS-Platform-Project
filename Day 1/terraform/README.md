@@ -83,8 +83,8 @@ After apply completes, check that the following exist:
 - S3 bucket for Terraform state
 - DynamoDB table for state locking
 
-## Phase 1 done ✅
-keep this read me for me (print out first)
+Phase 1 done ✅
+
 
 
 
