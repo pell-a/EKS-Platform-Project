@@ -1,0 +1,8 @@
+# Ignore all Terraform .terraform directories recursively
+**/.terraform/
+
+# Terraform state files
+*.tfstate
+*.tfstate.backup
+
+.terraform.lock.hcl
