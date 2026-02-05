@@ -1,11 +1,11 @@
 variable "aws_region" {
-  default = "us-east-1"
+  default = "{region}"
 }
 
 variable "bucket_name" {
-  default = "pella-eks-terraform-state"
+  default = "{bucket_name}"
 }
 
 variable "dynamodb_table" {
-  default = "terraform-locks"
+  default = "{dynamodb_table_name}"
 }

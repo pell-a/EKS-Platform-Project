@@ -1,9 +1,9 @@
 terraform {
   backend "s3" {
-    bucket = "pella-eks-terraform-state"
+    bucket = "{bucket_name}"
     key = "eks-platform/terraform.tfstate"
-    region = "us-east-1"
-    dynamodb_table = "terraform-locks"
+    region = "{region}"
+    dynamodb_table = "{dynamodb_table_name}"
     encrypt = true
   }
 }
