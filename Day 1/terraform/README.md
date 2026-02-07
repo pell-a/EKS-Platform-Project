@@ -30,37 +30,26 @@ Terraform requires the S3 bucket and DynamoDB table to exist before it can use t
 ```bash
 cd bootstrap/
 ```
-2. Change default values in variables.tf<br>
-aws_region, bucket_name, dynamodb_table_name (create any bucket name and dynamodb name)
-3. Initialize Terraform
+2. Initialize Terraform
 ```bash
 terraform init
 ```
-4. Review the execution plan
+3. Review the execution plan
 ```bash
 terraform plan
 ```
-5. Apply backend resources
+4. Apply backend resources
 ```bash
 terraform apply
 ```
 
 ## Step 2: Configure Terraform Remote Backend
-1. Edit backend.tf to reference the resources created in Step 1:
-
-bucket = "<your-s3-bucket-name>" <br>
-region = "<aws-region>" <br>
-dynamodb_table = "<your-dynamodb-table-name>"
-
-2. Reinitialize Terraform with the remote backend
+Reinitialize Terraform with the remote backend
 ```bash
 terraform init
 ```
 
-## Step 3: Change default values in root variables.tf <br>
-Change the aws region to your account's region and the availability zones.
-
-## Step 4: Provision VPC Infrastructure
+## Step 3: Provision VPC Infrastructure
 1. Navigate to the VPC module
 ```bash
 cd ../vpc
@@ -74,7 +63,7 @@ terraform init
 terraform apply
 ```
 
-## Step 5: Verify Infrastructure in AWS Console
+## Step 4: Verify Infrastructure in AWS Console
 After apply completes, check that the following exist:
 - VPC with correct CIDR
 - Public and private subnets across multiple AZs
@@ -84,6 +73,7 @@ After apply completes, check that the following exist:
 - DynamoDB table for state locking
 
 Phase 1 done ✅
+
 
 
 
