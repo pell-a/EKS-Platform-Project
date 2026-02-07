@@ -1,5 +1,5 @@
 variable "aws_region" {
-    default = "{region}"
+    default = "us-east-1"
 }
 
 variable "vpc_cidr" {
@@ -7,6 +7,6 @@ variable "vpc_cidr" {
 }
 
 variable "azs" {
-    default = ["{region}a", "{region}b"]
+    default = ["us-east-1a", "us-east-1b"]
 
 }
