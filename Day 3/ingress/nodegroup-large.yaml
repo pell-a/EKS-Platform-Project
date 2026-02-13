@@ -13,6 +13,3 @@ nodeGroups:
     privateNetworking: false
     volumeSize: 20
     amiFamily: AmazonLinux2023
-    subnets:
-      - subnet-04dfc0e268b12c5d8
-      - subnet-008199242bd014df5
