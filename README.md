@@ -26,8 +26,8 @@ Each folder represents a project phase/day and contains:
 
 ## Progress
 - ✅ Phase 01: Terraform VPC & Remote Backend
-- ⏳ Phase 02: EKS Cluster (eksctl)
-- ⏳ Phase 03: Ingress Controller
+- ✅ Phase 02: EKS Cluster (eksctl)
+- ✅ Phase 03: Ingress Controller
 - ⏳ Phase 04: Observability
 - ⏳ Phase 05: Security Hardening
 - ⏳ Phase 06: Automation
