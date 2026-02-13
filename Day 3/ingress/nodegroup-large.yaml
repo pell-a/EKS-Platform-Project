@@ -1,0 +1,18 @@
+apiVersion: eksctl.io/v1alpha5
+kind: ClusterConfig  # Note: must be ClusterConfig for eksctl to recognize the cluster
+metadata:
+  name: observability-eks
+  region: us-east-1
+
+nodeGroups:
+  - name: large-nodes
+    instanceType: m7i-flex.large
+    desiredCapacity: 3
+    minSize: 1
+    maxSize: 3
+    privateNetworking: false
+    volumeSize: 20
+    amiFamily: AmazonLinux2023
+    subnets:
+      - subnet-04dfc0e268b12c5d8
+      - subnet-008199242bd014df5
