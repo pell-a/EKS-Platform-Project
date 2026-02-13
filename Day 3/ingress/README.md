@@ -1,4 +1,4 @@
-# Phase 2: EKS NGINX Apps with Ingress (ALB)
+# Day 3: EKS NGINX Apps with Ingress (ALB)
 
 This guide walks through creating **NGINX apps** on EKS, setting up **path-based routing with AWS ALB**.
 
